@@ -1,0 +1,16 @@
+# Wedding-Photography-webite.github.io
+-Great big website 
+-First time using an HTML table with the right spacing 
+-First time using transitions 
+-First times using keyframes for transitions between pages
+-First time using rem more extensive to create sites 
+-Using a form competely 
+-First time having a navbar where the main logo is clickable 
+-First time using file paths to get back to other pages
+-First time using parallax effect 
+-First time using CSS Grid for the lines of photos and making grid albums 
+-First time using images width and sizing properly 
+-First time using CSS Grid with padding 
+-Most HTML pages I have used yet 
+-Most CSS I have used yet 
+-Thursday-Saturday 
