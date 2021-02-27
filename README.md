@@ -14,4 +14,5 @@
 -First time using CSS Grid with padding 
 -Most HTML pages I have used yet 
 -Most CSS I have used yet 
+-Made a lot of great practice with CSS grid and wrapping items 
 -Thursday-Saturday 
