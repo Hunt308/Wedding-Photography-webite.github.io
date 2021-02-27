@@ -1,0 +1,612 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    animation: transitionOn 0.85s;
+}
+
+@keyframes transitionOn{
+    from{
+    opacity: 0;
+    transform: rotateY(-50deg);
+    }
+
+    to {
+    opacity: 1;
+    transform: rotateY(0);
+
+    }
+}
+
+/* Navbar */
+.main-nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+    margin-left: 15px;
+    border-bottom: 1px solid #ccc;
+
+
+}
+
+
+.main-nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 14rem;
+}
+
+.main-nav h1{
+    margin-left: 11rem;
+}
+
+.main-nav li {
+    margin-left: 3rem;
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+ 
+}
+
+.main-nav a:hover{
+    color: #ccc;
+    transition: 0.50s; 
+}
+
+
+.current a{
+    color: #ccc;
+}
+
+.main-nav span{
+    font-weight: lighter;
+}
+
+/* Showcase */
+
+.showcase{
+    background-image: url(images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 96rem;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.showcase .content{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.showcase h2{
+    margin-top: 15rem;
+    font-size: 6rem;
+}
+
+.showcase{
+    font-size: 3.1rem;
+}
+
+/* Info section */
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    margin: 0 11rem;
+}
+
+.info img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.info a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #3E3E3E;
+    font-family: italic;
+
+}
+
+
+
+.info a:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+/*Wedding content */
+.wedding-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 9.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    padding: 0;
+    
+
+}
+
+.wedding-content img:hover{
+    opacity: 0.5;
+    background-color: #000;
+    transition: 1.2s ease-out;
+}
+
+
+.title {
+    margin: 3rem 11rem 0 11.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title h1{
+    font-size: 2.4rem;
+    color: #3e3e3e;
+    font-weight: lighter;
+}
+
+
+
+/* Clients Page */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    grid-gap: 9.9rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 11.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.grid-container h3{
+    margin-top: 0.5rem;
+    font-size: 3rem;
+}
+
+.grid-container p{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+
+.title p{
+    margin-top: 0.9rem;
+    font-style: italic;
+    color: #808080;
+    font-size: 1.4rem;
+}
+
+.grid-container img{
+    margin-top: 1.3rem;
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.grid-container img:hover{
+    opacity: 0.5;
+    transition: 1.2s ease-out
+}
+
+
+/* Service page */
+
+.main-img img{
+    width: 70rem;
+    height: 450px;
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
+
+
+
+
+/*top and bottom, need font small, max-width so the table always looks nice and big, min make it span*/
+.table{
+    border-collapse: collapse;
+    margin: 15px 0;
+    min-width: 400px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+
+
+
+.table tbody tr{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.table tr h3{
+    color: #605E5e;
+    font-weight: lighter;
+    font-size: 22px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: left;
+
+    
+}
+
+.table tr h3:hover {
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.25s;
+    
+}
+
+.table tr p{
+    font-size: 15px;
+    margin-left: 30rem;
+    color: #605E5e;
+}
+
+.table tr .btn{
+    color: #fff;
+    background-color: #3e3e3e;
+    padding: 11px;
+    margin-left: 15rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+
+.table tr .btn:hover{
+    background-color: #ccc;
+    transition: 0.3s;
+   
+}
+
+/* Bio page */
+
+.bio-img img{
+    width: 70rem;
+    height: 500px;
+    margin-left: 12rem;
+    margin-top: 1rem;
+}
+.personal{
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5rem;
+
+}
+
+.personal{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.personal .btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #3e3e3e;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.personal .btn:hover{
+    background-color: #ccc;
+    transition: 0.3s;
+}
+
+.contact h3{
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.contact p{
+    font-size: 20px
+}
+
+.contact form{
+    margin-top: 15px;
+
+}
+
+.contact form input{
+    background-color: #CCCCCC80;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    width: 20rem;
+    margin-left: 15rem;
+    margin-right: 10rem;
+
+}
+
+.contact form input .first{
+    margin-top: 1.5rem;
+}
+
+.contact form input:hover{
+    background-color: #333;
+
+}
+
+.contact form textarea{
+    width: 20rem;
+    height: 150px;
+    padding: 10px;
+    background-color: #CCCCCC80;
+    border: none;
+    margin-left: 15rem;
+    margin-right: 10rem;
+    margin-top: 5px;
+    color: grey;
+
+
+}
+
+.contact form .btn{
+    margin-left: 15rem;
+    display: block;
+    width: 20rem;
+}
+
+.contact .section_1, .contact .section_2{
+    font-style: italic;
+}
+
+.personal .text{
+    margin-left: 33rem;
+    line-height: 2rem;
+    font-size: 18px;
+    width: 550px;
+}
+
+/* Client photo grid page */
+
+.elements {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+
+    margin: 3rem 20rem;
+  }
+  
+  .elements > div {
+    padding: 200px;
+    background-size: cover;
+    background-position: center;
+  
+  
+  }
+  
+  /*next element in line is the type you pick */
+  
+  .elements > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+  }
+
+
+  .elements > div:nth-of-type(2) {
+    grid-column: 3 / 5;
+  }
+
+  .elements > div:nth-child(3){
+      grid-column: 1 / 5;
+
+  }
+
+  .elements > div:nth-child(4){
+      grid-column: 1 / 2;
+  }
+
+  .elements > div:nth-child(5){
+      grid-column: 2 / 5;
+      grid-row: 3 / 6;
+  }
+
+.elements > div:nth-child(6){
+    grid-row: 4 / 6;
+    grid-column: 1 / 2;
+}
+
+  
+.bg1 {
+    background: url('images/bg1.jpg');
+}
+
+
+.bg2 {
+    background: url('images/bg2.jpg');
+  }
+
+
+.bg3 {
+    background: url('images/bg3.jpg');
+}
+
+
+.bg4 {
+    background: url('images/bg4.jpg');
+}
+
+.bg5 {
+    background: url('images/bg5.jpg');
+}
+
+.bg6 {
+    background: url('images/bg6.jpg');
+}
+
+.bg7{
+    background: url('images/bg7.jpg');
+}
+
+.bg8{
+    background: url('images/bg8.jpg');
+}
+
+.bg9{
+    background: url('images/bg9.jpg');
+}
+
+.bg10{
+    background: url('images/bg10.jpg');
+}
+
+.bg11{
+    background: url('images/bg11.jpg');
+}
+
+.bg12{
+    background: url('images/bg12.jpg');
+    
+}
+
+.bg13{
+    background: url('images/bg13.jpg');
+    
+}
+
+.bg14{
+    background: url('images/bg14.jpg');
+    
+}
+
+.bg15{
+    background: url('images/bg15.jpg');
+    
+}
+
+.bg16{
+    background: url('images/bg16.jpg');
+    
+}
+
+.bg17{
+    background: url('images/bg17.jpg');
+    
+}
+
+.bg18{
+    background: url('images/bg18.jpg');
+    
+}
+
+
+
+
+.bg19{
+    background: url('images/bg19.jpg');
+    
+}
+
+.bg20{
+    background: url('images/bg20.jpg');
+    
+}
+
+.bg21{
+    background: url('images/bg21.jpg');
+    
+}
+
+.bg22{
+    background: url('images/bg22.jpg');
+    
+}
+
+.bg23{
+    background: url('images/bg23.jpg');
+    
+}
+
+.bg24{
+    background: url('images/bg24.jpg');
+    
+}
+
+.bg25{
+    background: url('images/bg25.jpg');
+    
+}
+
+.bg26{
+    background: url('images/bg26.jpg');
+    
+}
+
+.bg27{
+    background: url('images/bg27.jpg');
+    
+}
+
+.author a{
+    margin-left: 20rem;
+    font-size: 1.5rem;
+    color: #000;
+    letter-spacing: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 3rem 3rem 20rem;
+
+}
+
+
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 1.6rem;
+    background: #ccc;
+    width: 100%;
+    color: #fff;
+}
+
