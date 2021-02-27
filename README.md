@@ -4,7 +4,7 @@
 -First time using transitions 
 -First times using keyframes for transitions between pages and loading pages
 -First time using rem more extensive to create sites 
--Using a form competely 
+-First time making images bigger in another tab to view them better 
 -First time having a navbar where the main logo is clickable 
 -First time using file paths to get back to other pages
 -First time using parallax effect 
@@ -12,6 +12,7 @@
 -First time using images width and sizing properly 
 -First time using CSS Grid for picture sections and word sections together 
 -First time using CSS Grid with padding 
+-Using a form competely 
 -Most HTML pages I have used yet 
 -Most CSS I have used yet 
 -Made a lot of great practice with CSS grid and wrapping items 
